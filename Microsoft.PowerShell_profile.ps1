@@ -4,7 +4,7 @@ Import-Module posh-git
 Import-Module oh-my-posh
 Import-Module Terminal-Icons
 #Set-PoshPrompt Paradox
-oh-my-posh --init --shell pwsh --config ~/.config/powershell/M365Princess.omp.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config ~/.config/powershell/bubbles.omp.json | Invoke-Expression
 # Alias
 Set-Alias vim nvim
 Set-Alias ll ls
@@ -12,13 +12,6 @@ Set-Alias g git
 Set-ALias grep findstr
 Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
-Set-Alias xampp_start 'C:\xampp\xampp_start.exe'
-
-function xampp_stops{ 
-	start  'C:\xampp\xampp_stop.exe' 
-	start 'C:\xampp\mysql_stop.bat'
-}
-Set-Alias xampp_stop xampp_stops
  
 Import-Module PSReadLine
 
